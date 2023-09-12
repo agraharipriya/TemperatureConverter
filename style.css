@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px rgba(19, 90, 166, 0.7); /* Adjust the color and size as needed */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+select {
+    padding: 10px;
+    background-color: rgb(6, 6, 119);
+    border: 1px solid #120551;
+    border-radius: 5px;
+    color:white;
+}
+
+button {
+    background-color: rgb(6, 6, 119);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#result {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+button:hover{
+    background-color: #0e7ff7;
+}
+@media (max-width: 768px) {
+    .input-container {
+        flex-direction: column;
+    }
+
+    input, select {
+        width: 100%; 
+        margin: 5px 0; 
+    }
+}
